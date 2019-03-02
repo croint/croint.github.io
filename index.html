@@ -1,135 +1,164 @@
 <!DOCTYPE html>
 <html>
-   <title>croint.</title>
-   <body <!--style="text-align: center; font-family: helvetica; padding-top: 20%; background-color: black; color: white;"-->>
-      <h1>croint.</h1>
-      <style>
-         html {
-  height: 100%;
-}
-body {
-  align-items: center;
-  background: #000;
-  display: flex;
-  transform-style: preserve-3d;
-  transform: perspective(60rem);
-  height: 100%;
-  justify-content: center;
-  margin: 0;
-}
-.glitch {
-  animation: glitch-skew 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s infinite;
-  font-family: orbitron, sans-serif;
-  font-size: 8rem;
-  font-weight: 900;
-  line-height: 1;
-  position: relative;
-  text-align: center;
-  text-transform: lowercase;
-  transform-origin: center top;
-}
-.glitch__main {
-  color: #fff;
-}
-.glitch__color {
-  height: 100%;
-  left: 0;
-  opacity: 0.8;
-  position: absolute;
-  top: 0;
-  transform-origin: center center;
-  width: 100%;
-  z-index: -1;
-}
-.glitch__color--red {
-  animation: glitch 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
-  color: red;
-}
-.glitch__color--blue {
-  animation: glitch 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite reverse;
-  color: blue;
-}
-.glitch__color--green {
-  animation: glitch 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 100ms infinite;
-  color: #00ff0b;
-}
-.glitch__line {
-  animation: glitch-line 2s linear infinite;
-  background: #000;
-  content: '';
-  height: 1px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-.glitch__line--first {
-  animation: glitch-line 2s linear infinite;
-}
-.glitch__line--second {
-  animation: glitch-line 1s linear 1s infinite;
-}
-@keyframes glitch {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(-8px, 8px);
-  }
-  40% {
-    transform: translate(-8px, -8px);
-  }
-  60% {
-    transform: translate(8px, 8px);
-  }
-  80% {
-    transform: translate(8px, -8px);
-  }
-  100% {
-    transform: translate(0);
-  }
-}
-@keyframes glitch-skew {
-  0% {
-    transform: skew(0deg, 0deg);
-  }
-  48% {
-    transform: skew(0deg, 0deg);
-    filter: blur(0);
-  }
-  50% {
-    transform: skew(-20deg, 0deg);
-    filter: blur(4px);
-  }
-  52% {
-    transform: skew(20deg, 0deg);
-  }
-  54% {
-    transform: skew(0deg, 0deg);
-    filter: blur(0);
-  }
-  100% {
-    transform: skew(0deg, 0deg);
-  }
-}
-@keyframes glitch-line {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: 100%;
-  }
-}
+<head>
+	<title>croint.</title>
+</head>
+<body>
+	<!--style="text-align: center; font-family: helvetica; padding-top: 20%; background-color: black; color: white;"-->&gt;
+	<h1>croint.</h1>
+	<style>
+	        html {
+	 height: 100%;
+	}
+	body {
+	 align-items: center;
+	 background: #000;
+	 display: flex;
+	 transform-style: preserve-3d;
+	 transform: perspective(60rem);
+	 height: 100%;
+	 justify-content: center;
+	 margin: 0;
+	}
+	.glitch {
+	 animation: glitch-skew 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s infinite;
+	 font-family: orbitron, sans-serif;
+	 font-size: 8rem;
+	 font-weight: 900;
+	 line-height: 1;
+	 position: relative;
+	 text-align: center;
+	 text-transform: lowercase;
+	 transform-origin: center top;
+	}
+	.glitch__main {
+	 color: #fff;
+	}
+	.glitch__color {
+	 height: 100%;
+	 left: 0;
+	 opacity: 0.8;
+	 position: absolute;
+	 top: 0;
+	 transform-origin: center center;
+	 width: 100%;
+	 z-index: -1;
+	}
+	.glitch__color--red {
+	 animation: glitch 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+	 color: red;
+	}
+	.glitch__color--blue {
+	 animation: glitch 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite reverse;
+	 color: blue;
+	}
+	.glitch__color--green {
+	 animation: glitch 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 100ms infinite;
+	 color: #00ff0b;
+	}
+	.glitch__line {
+	 animation: glitch-line 2s linear infinite;
+	 background: #000;
+	 content: '';
+	 height: 1px;
+	 left: 0;
+	 position: absolute;
+	 top: 0;
+	 width: 100%;
+	 z-index: 1;
+	}
+	.glitch__line--first {
+	 animation: glitch-line 2s linear infinite;
+	}
+	.glitch__line--second {
+	 animation: glitch-line 1s linear 1s infinite;
+	}
+	@keyframes glitch {
+	 0% {
+	   transform: translate(0);
+	 }
+	 20% {
+	   transform: translate(-8px, 8px);
+	 }
+	 40% {
+	   transform: translate(-8px, -8px);
+	 }
+	 60% {
+	   transform: translate(8px, 8px);
+	 }
+	 80% {
+	   transform: translate(8px, -8px);
+	 }
+	 100% {
+	   transform: translate(0);
+	 }
+	}
+	@keyframes glitch-skew {
+	 0% {
+	   transform: skew(0deg, 0deg);
+	 }
+	 48% {
+	   transform: skew(0deg, 0deg);
+	   filter: blur(0);
+	 }
+	 50% {
+	   transform: skew(-20deg, 0deg);
+	   filter: blur(4px);
+	 }
+	 52% {
+	   transform: skew(20deg, 0deg);
+	 }
+	 54% {
+	   transform: skew(0deg, 0deg);
+	   filter: blur(0);
+	 }
+	 100% {
+	   transform: skew(0deg, 0deg);
+	 }
+	}
+	@keyframes glitch-line {
+	 0% {
+	   top: 0;
+	 }
+	 100% {
+	   top: 100%;
+	 }
+	}
 
-      </style>
-      <div class="glitch" data-text="croint.">
-         <span class="glitch__color glitch__color--red">croint.</span>
-         <span class="glitch__color glitch__color--blue">croint.</span>
-         <span class="glitch__color glitch__color--green">croint.</span>
-         <span class="glitch__main">croint.</span>
-         <span class="glitch__line glitch__line--first"></span>
-         <span class="glitch__line glitch__line--second"></span>
-      </div>
-   </body>
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script> 
+	<script>
+	$(window).on('mousemove', function(e) {
+	 var offsetX = 0.5 - e.pageX / w, //cursor position X
+	     offsetY = 0.5 - e.pageY / h, //cursor position Y
+	     dy = e.pageY - h / 2, //@h/2 = center of poster
+	     dx = e.pageX - w / 2, //@w/2 = center of poster
+	     theta = Math.atan2(dy, dx), //angle between cursor and center of poster in RAD
+	     angle = theta * 180 / Math.PI - 90, //convert rad in degrees
+	     offsetPoster = $menu.data('offset'),
+	     transformPoster = 'translate3d(0, ' + -offsetX * offsetPoster + 'px, 0) rotateX(' + (-offsetY * offsetPoster) + 'deg) rotateY(' + (offsetX * (offsetPoster * 2)) + 'deg)'; //poster transform
+
+	 //get angle between 0-360
+	 if (angle < 0) {
+	   angle = angle + 360;
+	 }
+
+	 //poster transform
+	 $menu.css('transform', transformPoster);
+
+	 //parallax for each layer
+	 $item.each(function() {
+	   var $this = $(this),
+	       offsetLayer = $this.data('offset') || 0,
+	       transformLayer = 'translate3d(' + offsetX * offsetLayer + 'px, ' + offsetY * offsetLayer + 'px, 20px)';
+
+	   $this.css('transform', transformLayer);
+	 });
+	});
+	</script>
+	<div class="glitch" data-text="croint.">
+		<span class="glitch__color glitch__color--red">croint.</span> <span class="glitch__color glitch__color--blue">croint.</span> <span class="glitch__color glitch__color--green">croint.</span> <span class="glitch__main">croint.</span> <span class="glitch__line glitch__line--first"></span> <span class="glitch__line glitch__line--second"></span>
+	</div>
+</body>
 </html>
